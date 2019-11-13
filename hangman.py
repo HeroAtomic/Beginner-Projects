@@ -66,7 +66,7 @@ fake_word = list(word)
 # Start out by hiding the word
 hide_word()
 
-guess_left = 10
+guess_left = 6
 guessed_letters = []
 
 # go until the word is guessed
@@ -76,6 +76,6 @@ while list(word) != hidden_word and guess_left !=0:
     print(hidden_word)
 
 if guess_left == 0:
-    print('You lose! The word was {}'.format(starting_word))
+    print('You lose! The word was {}'.format(starting_word.upper()))
 else:
-    print('You win! The word, as you know was {}'.format(starting_word))
+    print('You win! The word, as you know was {}'.format(starting_word.upper()))
