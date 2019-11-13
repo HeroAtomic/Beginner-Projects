@@ -8,7 +8,7 @@ tries += 1
 
 while int(user_guess) != number:
     if int(user_guess) > 20:
-        print('Number is out of range! Pick a number between 1 abd 20')
+        print('Number is out of range! Pick a number between 1 and 20')
         user_guess = input('Guess a number:')
     elif int(user_guess) > number:
         print('Number is too high!')
