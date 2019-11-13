@@ -26,7 +26,7 @@ def hide_word():
     for i in word:
         hidden_word.append('-')
     #the hidden word is now created
-    print(hidden_word)
+    print(''.join(hidden_word))
 
 def user_guess():
     global guess_left
@@ -73,7 +73,7 @@ guessed_letters = []
 # or until 6 guesses are done
 while list(word) != hidden_word and guess_left !=0:
     user_guess()
-    print(hidden_word)
+    print(''.join(hidden_word))
 
 if guess_left == 0:
     print('You lose! The word was {}'.format(starting_word.upper()))
